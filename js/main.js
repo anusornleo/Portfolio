@@ -44,28 +44,66 @@
   });
 
   /*--/ Star Counter /--*/
-  $(".counter").counterUp({
-    delay: 10,
-    time: 1400
-  });
+  $(".counter").counterUp(
+    {
+      delay: 10,
+      time: 1400
+    },
+  );
 
-  $(".progress-bar").waypoint(
+  $(".b1").waypoint(
     function() {
       $(".b1").css({
         width: "85%"
-	  });
-	  $(".b2").css({
+      });
+    },
+    { offset: 750 }
+  );
+
+  $(".b2").waypoint(
+    function() {
+      $(".b2").css({
         width: "75%"
-	  });
-	  $(".b3").css({
-        width: "55%"
-	  });
-	  $(".b4").css({
+      });
+    },
+    { offset: 750 }
+  );
+
+  $(".b3").waypoint(
+    function() {
+      $(".b3").css({
+        width: "50%"
+      });
+    },
+    { offset: 750 }
+  );
+
+  $(".b4").waypoint(
+    function() {
+      $(".b4").css({
         width: "90%"
       });
     },
-    { offset: 400 }
+    { offset: 750 }
   );
+
+  //   $(".progress-bar").waypoint(
+  //     function() {
+  //       $(".b1").css({
+  //         width: "85%"
+  //       });
+  //       $(".b2").css({
+  //         width: "75%"
+  //       });
+  //       $(".b3").css({
+  //         width: "55%"
+  //       });
+  //       $(".b4").css({
+  //         width: "90%"
+  //       });
+  //     },
+  //     { offset: 800 }
+  //   );
 
   /*--/ Star Scrolling nav /--*/
   $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {

@@ -684,7 +684,9 @@ a:hover {
 }
 
 .about-mf .about-img img {
-  margin-left: 10px;
+  margin-left: 0px;
+  border-radius: 50%;
+  width: 100%;
 }
 
 .skill-mf span {
@@ -698,34 +700,67 @@ a:hover {
   height: .7rem;
 }
 
-.skill-mf .progress .progress-bar {
+/* .progress .b1 {
   height: .7rem;
   background-color: #37474f;
   -webkit-transition: width 2s;
-  /* For Safari 3.1 to 6.0 */
   transition: width 2s;
-}
+} */
 
 .b1 {
   width: 0%;
+  height: .7rem;
+  background-color: #37474f;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 .b2 {
   width: 0%;
+  height: .7rem;
+  background-color: #37474f;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 .b3 {
   width: 0%;
+  height: .7rem;
+  background-color: #37474f;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 .b4 {
   width: 0%;
+  height: .7rem;
+  background-color: #37474f;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 
 /*======================================
 //--//-->   SERVICES
 ======================================*/
+
+
+
+.framework-box {
+  margin-left: 0px;
+  border-radius: 50%;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.framework-img {
+  width: auto;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .service-box {
   background-color: #fff;
