@@ -81,7 +81,7 @@
   $(".b4").waypoint(
     function() {
       $(".b4").css({
-        width: "90%"
+        width: "50%"
       });
     },
     { offset: 750 }
