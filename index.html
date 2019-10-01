@@ -366,7 +366,7 @@
                 <div class="col-md-6">
                   <div class="title-box-2">
                     <h5 class="title-left">
-                      Send Message Us
+                      Try to sent message to me.
                     </h5>
                   </div>
                   <div>
@@ -379,8 +379,6 @@
                     <form method="POST"
                       action="https://script.google.com/macros/s/AKfycbzbzGWRN08xM-XDo_7iv1emhkNmnWvx8iW_PMqtfQ/exec"
                       class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"><a>swdwadeawdawd</a></div>
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
@@ -411,9 +409,17 @@
                           </div>
                         </div>
                         <div class="col-md-12">
-                    
-                          <button type="submit" class="button button-a button-big button-rouded">Sent Message</button>
-     
+
+                          <button id="submitcontact" type="submit" class="button button-a button-big button-rouded">Sent
+                            Message
+
+                          </button>
+                          <div id="sentload" class="spinner-border hide" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <span id="checkmark" class="hide ion-checkmark"></span>
+
+
                         </div>
                       </div>
                     </form>

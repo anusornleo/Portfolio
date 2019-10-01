@@ -16,6 +16,18 @@ html::-webkit-scrollbar { width: 0 !important }
 
 .modal-body::-webkit-scrollbar { width: 0 !important }
 
+.hide{
+  display: none;
+}
+
+#checkmark{
+  font-size: 19px;
+}
+
+.green{
+  background-color: green;
+}
+
 
 
 body {
@@ -1183,6 +1195,7 @@ footer .credits a {
   margin-bottom: 15px;
 }
 
+#sentload.show,
 #sendmessage.show,
 #errormessage.show,
 .show {
@@ -1222,7 +1235,7 @@ footer .credits a {
 }
 
 .button:hover {
-  background-color: #1c81c4;
+  background-color: #536a75;
   color: #fff;
   transition: all 500ms ease;
 }

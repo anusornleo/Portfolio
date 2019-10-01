@@ -94,10 +94,16 @@ jQuery(document).ready(function($) {
     if( ! action ) {
       action = 'https://script.google.com/macros/s/AKfycbzbzGWRN08xM-XDo_7iv1emhkNmnWvx8iW_PMqtfQ/exec';
     }
+    console.log("click")
+    $("#submitcontact").empty();
+    $("#sentload").removeClass("hide")
+    $("#submitcontact").append($("#sentload"));
+
     $.ajax({
       type: "POST",
       url: action,
       data: str,
+      // async: false,
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
@@ -105,8 +111,12 @@ jQuery(document).ready(function($) {
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
         } else {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
+          console.log("alert-success")
+          $("#sentload").addClass("hide")
+          $("#checkmark").removeClass("hide")
+          $("#submitcontact").append($("#checkmark"));
+          $("#submitcontact").append("  Sent Success");
+          $("#submitcontact").css("background-color", "#00897b");
           $('.contactForm').find("input, textarea").val("");
         }
 
