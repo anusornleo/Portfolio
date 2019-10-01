@@ -1156,8 +1156,9 @@ footer .credits a {
 ======================================*/
 
 #sendmessage {
-  color: #37474f;
-  border: 1px solid #37474f;
+  color: #ffffff;
+  background-color: #37474f;
+  border-radius: 50px;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1166,9 +1167,16 @@ footer .credits a {
 }
 
 #errormessage {
-  color: red;
+  /* color: red;
   display: none;
   border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px; */
+  color: #37474f;
+  border: 1px solid #37474f;
+  display: none;
   text-align: center;
   padding: 15px;
   font-weight: 600;
